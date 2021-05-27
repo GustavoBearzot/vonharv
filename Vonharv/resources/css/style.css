@@ -6,14 +6,14 @@ font-family: 'PT Serif', Arial ,sans-serif;
 /*BASIC SETUP*/
 /*-------------------------------*/
 *{
-    margin: 0%;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 html{
-    background-color: #fff;
-    color: rgb(48, 46, 46);
-    font-family:'PT Serif','Arial', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(71, 70, 70);
+    font-family:'Arial',serif, sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
@@ -43,8 +43,8 @@ h1,h2,h3{
 h1{ 
     margin-top: 0%;
     margin-bottom: 20px;
-    color: #fff;
-    font-size: 200%;
+    color: rgb(197, 194, 194);
+    font-size: 180%;
     word-spacing: 4px;
     letter-spacing: 1px;
 }
@@ -58,28 +58,23 @@ letter-spacing: 1px;
 h3{
     font-size: 110%;
     margin-bottom: 15px;
+    color: rgb(255, 255, 255);
 }
-h2:after {
-    display: block;
-    height: 2px;
-    background-color: #e67e22;
-    content: "";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-
-} 
-
-
+h4{
+    font-size: 110%;
+    margin-bottom: 15px;
+    color: rgb(66, 66, 66);
+}
 /* ------------------------------*/
 /*HEADER*/
 /*-------------------------------*/
 
 header{
-    background-image:url(img/mini1.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/mini1.jpg);
     background-position: center;
     height: 100vh;
-    background-attachment: fixed;
+    border-bottom: 4px solid #e75834 ;
+        
 }
 .hero-text-box{
     position: absolute;
@@ -88,66 +83,74 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-family: 'Merriweather', serif;
 }
 
 .logo {
-    width: 180px;
-    margin-left: auto;
-    }
-
-/*MAIN NAV*/
-
-.main-nav{
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.411);
-    padding: 10px;
+    width: 222px;
+    display:flex ;
+    justify-content: center;
+    margin: 55px 0 40px 0;
+}
+.icon-center-align {
+    display: flex;
+    justify-content: center;
     
-    }
-.main-nav li{
-display: inline-block;
-margin-left: 10px;
-    }
-.main-nav li a{
-    margin-top: 0%;
-    margin-bottom: 20px;
+  }
+
+  /*MAIN NAV*/
+
+  .main-nav {
+    background-color: rgba(0, 0, 0, 0.295);
+    padding: 0.5rem;
+  }
+  
+  .main-nav li {
+    display: inline-block;
+   }
+  
+  .main-nav li a:link,
+  .main-nav li a:visited {
     color: #fff;
-    font-size: 65%;
+    font-size: 14px;
     word-spacing: 4px;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
-
-}
+    padding: 0.5rem;
+  }
+  .main-nav li a:hover,
+  .main-nav li a:active {
+    color: #e96645e1;
+  }
 /* ------------------------------*/
 /*BTN*/
 /*-------------------------------*/
 
 .btn:link,
-.btn:visited,
-input[type=submit] {
+.btn:visited {
     display: inline-block;
     padding: 10px 40px;
     font-weight: 300;
     text-decoration: none;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+    font-family: 'Merriweather', serif;
+    border-radius: 5px;
     
 }
 
 .btn-full:link,
-.btn-full:visited,
-input[type=submit] {
-    background-color: #e96645e1;
-    border: 1px solid #e96645e1;
+.btn-full:visited {
+    background-color: #e75834 ;
+    border: 1px solid #e75834 ;
     color: #fff;
     margin-right: 15px;
 }
 
 .btn:hover,
-.btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
+.btn:active{
     background-color: #ffffff;
-color:#000;
+    color:#000;
 }
 .btn-full:hover,
 .btn-full:active {
@@ -155,3 +158,26 @@ color:#000;
     border: 1px solid#ffffff;
     color: #000;
 }
+/* ------------------------------*/
+/*section-presentacion*/
+/*-------------------------------*/
+.section-presentacion {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    }
+.long-copy{
+    line-height: 145%;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+/* ------------------------------*/
+/*contenedor-secciones*/
+/*-------------------------------*/
+
+.eventos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)) url(img/primera.jpg);
+    background-size:cover;
+    color: #fff;
+    background-attachment: fixed;
+    }
